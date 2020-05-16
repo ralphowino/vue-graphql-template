@@ -1,0 +1,19 @@
+#import "./PostFragment.gql"
+#import "./AuthorFragment.gql"
+
+query ($id: Int!){
+  user (userId: $id){
+    ...Author
+    name
+    email
+    phone
+    website
+    posts {
+      ...Post
+    }
+    company {
+      name
+      bs
+    }
+  }
+}

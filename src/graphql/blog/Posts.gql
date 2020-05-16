@@ -1,0 +1,11 @@
+#import "./PostFragment.gql"
+#import "./AuthorFragment.gql"
+
+query posts {
+  posts {
+    ...Post
+    author {
+        ...Author
+    }
+  }
+}

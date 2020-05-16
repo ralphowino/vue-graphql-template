@@ -24,13 +24,16 @@
         </div>
       </div>
     </div>
+    <apollo-example/>
   </div>
 </template>
 
 <script>
 
+import ApolloExample from '../components/ApolloExample.vue';
+
 export default {
   name: 'Home',
-  components: {},
+  components: { ApolloExample },
 };
 </script>

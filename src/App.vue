@@ -15,7 +15,7 @@
           <!-- Left Side Of Navbar -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <router-link class="nav-link" to="#">Resource</router-link>
+              <router-link class="nav-link" to="/blog">Blog</router-link>
             </li>
           </ul>
 

@@ -1,0 +1,18 @@
+#import "./PostFragment.gql"
+#import "./AuthorFragment.gql"
+
+query ($id: ID!){
+  post (postId: $id){
+    ...Post
+    author{
+      ...Author
+    }
+    comments {
+      id
+      body
+      author{
+        ...Author
+      }
+    }
+  }
+}
